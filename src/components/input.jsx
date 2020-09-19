@@ -65,7 +65,7 @@ const InputComponent = ({ type, label, value, onChange, icon = undefined, name =
                     <div>
                         { icon && icon }
                     </div>
-                    <input type={type} id={label.toLowerCase()} name={name} value={value} onChange={onChange} className={"bg-gray-100 ml-2 text-gray-800 z-0 " + (type === "number" ? "w-4" : "w-8/12")}/>
+                    <input type={type} id={label.toLowerCase()} name={name} required={true} value={value} onChange={onChange} className={"bg-gray-100 ml-2 text-gray-800 z-0 " + (type === "number" ? "w-4" : "w-8/12")}/>
                     { type === "number" && <input type="text" id="subdomaintwo" value="pessoa" className="w-8/12 bg-white text-gray-800" disabled/> }
                 </WrapperInputAndIcon>
             </div>
